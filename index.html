@@ -4,6 +4,19 @@
         <script src="jquery-1.10.2.min.js"></script>
         <title>Music</title>
     </head>
+    <body>
+        <div id=loader>
+            <div class="har-loader">
+                <div class="har-sound-1"></div>
+                <div class="har-sound-2"></div>
+                <div class="har-sound-3"></div>
+                <div class="har-sound-4"></div>
+                <div class="har-sound-5"></div>
+                <div class="har-sound-6"></div>
+                <div class="har-sound-7"></div>
+                <div class="har-sound-8"></div>
+                <div class="har-sound-9"></div>
+              </div>
         </div>
         <div id="main">
             <div id="head">
@@ -46,6 +59,7 @@
 
     </body>
     <script type="text/javascript">
+
     var background = {
     "Willow": "red",
     "Champagne problems": "#cfb161"
@@ -163,6 +177,13 @@
             song.volume += 0.20;
         }
 
+        var loader = document.querySelector(".loader")
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("disppear");
+}
     
     </script>
     
