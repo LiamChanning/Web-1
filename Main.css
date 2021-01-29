@@ -3,6 +3,9 @@ body{
   padding: 0px;
 background-color: #000000;
 }
+.disppear{
+  animation: vanish 1s forwards;
+}
 
 @keyframes vanish {
   100%{
