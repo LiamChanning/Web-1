@@ -5,6 +5,15 @@
     <title>Music</title>
     <link rel="icon" href="https://img.icons8.com/cotton/64/000000/headphones--v1.png" type="image/x-icon"/>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZH2J3K8BE"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+<script src="../../scripts/poly-decomp.min.js" defer></script>
+<script src="../../scripts/matter.min.js" defer></script>
+<script src="../../scripts/matter-attractors.min.js" defer></script>
+    <script src="my.js" defer></script>
+    <link rel="stylesheet" href="cam.css">
+    <script src="cam.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js" defer></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -72,9 +81,67 @@
   <div class="high-score">
       high score<br>
       <span class="score-value"></span>
+
   </div>
   <button class="trigger left-trigger">tap!</button>
   <button class="trigger right-trigger">tap!</button>
+  <div id="video">
+    <video autoplay="true"></video>
+</div>
+<div class="camera">
+    <div class="top">
+        <div class="flash">
+            <div class="flash-lines"></div>
+            <div class="inside-flash"></div>
+            <div class="light none"></div>
+        </div>
+        <div class="on-off-button"></div>
+        <div class="lens-div">
+            <div class="lens"></div>
+            <div class="inside-lens"></div>
+        </div>
+        <div class="circle"></div>
+        <div class="view-finder">
+            <div class="reflection"></div>
+            <div class="glass"></div>
+        </div>
+        <div class="minus-plus-button">
+            <div class="minus"></div>
+            <div class="plus"></div>
+        </div>
+        <div class="brand-name">
+            <span>One</span>
+            <span>Step</span>
+            <span class="number">2</span>
+        </div>
+        <div class="click-button">
+            <div class="reflection"></div>
+        </div>
+        <div class="curve"></div>
+        <div class="slide">
+            <div class="first-part"></div>
+            <div class="second-part"></div>
+            <div class="third-part"></div>
+        </div>
+        <div class="background"></div>
+    </div>
+    <div class="bottom">
+        <div class="second-part"></div>
+        <div class="colors"></div>
+    </div>
+    <div class="back-div">
+        <div class="first-part"></div>
+        <div class="second-part"></div>
+    </div>
+    <div class="polaroid">
+    <div id="shadow" class="none"></div>
+        <img class="none"/>
+        
+        <canvas id="canvas" class="none" width="640" height="480">
+        </canvas>
+    </div>
+    
+</div>
   </body>
   <script type="text/javascript">
     var background = {
