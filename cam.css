@@ -758,7 +758,6 @@ li {
 .camera .polaroid #shadow {
   width: 250px;
   height: 60px;
-  box-shadow: 45px 15px 20px #958E92;
   position: relative;
   top: -120px;
   left: -70px;
