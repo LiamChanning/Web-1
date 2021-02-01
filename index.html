@@ -15,6 +15,15 @@
 </script>
   </head>
   <body>
+    <div class="loader">
+      <div class="loader1">
+        <div class="drop"></div>
+        <div class="drop2"></div>
+        <div class="drop2"></div>
+        <div class="drop"></div>
+      
+      </div>
+    </div>
     <div id="main">
       <div id="head">
         <h2>|Music|</h2>
@@ -93,6 +102,8 @@
       "imagine.jpg",
     ];
 
+    var loader = document.querySelector(".loader");
+
     var songTitle = document.getElementById("songTitle");
     var fillBar = document.getElementById("fill");
 
@@ -101,6 +112,12 @@
     var song = new Audio();
     var currentSong = 0; // it point to the current song
 
+    window.addEventListener("load", vanish);
+
+    function vanish() {
+      loader.classList.add("disppear");
+    }
+    
     window.onload = playSong; // it will call the function playSong when window is load
 
     $("#bg").css("background-color", background[currentSong]);
@@ -189,12 +206,6 @@
       song.volume += 0.2;
     }
 
-    var loader = document.querySelector(".loader");
 
-    window.addEventListener("load", vanish);
-
-    function vanish() {
-      loader.classList.add("disppear");
-    }
   </script>
 </html>
